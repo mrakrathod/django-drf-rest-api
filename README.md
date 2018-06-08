@@ -25,24 +25,31 @@ https://www.python.org/downloads/
 
 **Install virtual envoirment**
 
-##Installing
+###### Installing
 1. clone from repository
+
 **git clone https://github.com/mrakrathod/django-drf-rest-api.git**
 
 2. create virtualenvoirment
+
 **virtualenv --python=python3.6 drf_env**
 
 3. Activate virtual envoirment
+
 **source drf_env/bin/activate**
 
 4. Install python dependancy packages.
 Note, requirments.txt file present in project root direcotry
+
+
 **pip install -r requirments.txt**
 
 5. start project below command.
+
 **python manage.py runserver**
 
 6. Copy this URL on your browsers tab 
+
 **http://127.0.0.1:8000/**
  
 ## API endpoints.
@@ -50,8 +57,10 @@ Note, requirments.txt file present in project root direcotry
 **Registration API docs.**
 
 URL : /api/v1/register/
-            Endpoints : /register/
-            Accepted Method : POST
+
+Endpoints : /register/
+
+Accepted Method : POST
 
             Accepted Param in body:
              {
@@ -72,8 +81,10 @@ URL : /api/v1/register/
 **Login API docs.**
 
 URL : /api/v1/login/
-        Endpoints : /login/
-        Accepted Method : POST
+
+Endpoints : /login/
+
+Accepted Method : POST
 
         Accepted Param in body:
         {
@@ -91,8 +102,10 @@ URL : /api/v1/login/
 **Logout API docs**
 
 URL : /api/v1/logout/
-        Endpoints : /logout/
-        Accepted Method : POST
+
+Endpoints : /logout/
+
+Accepted Method : POST
 
         Accepted Param in body:
         {
