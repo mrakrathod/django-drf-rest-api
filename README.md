@@ -1,4 +1,5 @@
 # Django Rest API.
+[![Build Status](https://travis-ci.org/mrakrathod/django-drf-rest-api.png?branch=master)](https://travis-ci.org/mrakrathod/django-drf-rest-api})
 
 It's django project to build django rest API using Django rest framework package.
 ###### Basically implement Registration, Login, Logout API.
