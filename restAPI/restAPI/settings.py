@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
 
-    'api'
+    'api',
+    'django_nose'
 
 ]
 
@@ -136,3 +137,10 @@ REST_FRAMEWORK = {
     ]
 
 }
+
+TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
+
+NOSE_ARGS = [
+    '--with-coverage',
+    '--cover-package=api',
+]

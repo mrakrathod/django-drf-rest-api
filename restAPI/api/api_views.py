@@ -54,12 +54,6 @@ class UserRegistrationViewset(viewsets.ModelViewSet):
                     'token': user.auth_token.key ,
                 })
 
-        return Response({
-            'status': status.HTTP_400_BAD_REQUEST,
-            'message': 'Please provided required fields.',
-            'error' : serializer.errors 
-        })
-
 
 class ObtainUserAuthToken(APIView):
     """
@@ -77,7 +71,7 @@ class ObtainUserAuthToken(APIView):
         Accepted success response: 
         {
             "status": 201,
-            "message": "Successfully register new user.",
+            "message": "Successfully login.",
         }      
     """
     serializer_class = AuthTokenSerializer
