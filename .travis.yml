@@ -18,4 +18,5 @@ before_script:
 script:
   - python restAPI/manage.py migrate
   - python restAPI/manage.py test
+  - cd restAPI && coverage report $TRAVIS_TEST_RESULT
 
